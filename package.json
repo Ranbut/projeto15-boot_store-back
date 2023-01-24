@@ -2,6 +2,26 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "joi": "^17.7.0",
-    "mongodb": "^4.13.0"
-  }
+    "mongodb": "^4.13.0",
+    "nodemon": "^2.0.20"
+  },
+  "name": "projeto15-boot_store-back",
+  "type": "module",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaienamartins/projeto15-boot_store-back.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaienamartins/projeto15-boot_store-back/issues"
+  },
+  "homepage": "https://github.com/kaienamartins/projeto15-boot_store-back#readme"
 }
