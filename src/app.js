@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import produtosRoute from './routes/produtos.routes.js';
+import authRoute from './routes/authRoutes.js'
 
 const server = express();
 server.use(express.json());
