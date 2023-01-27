@@ -1,9 +1,14 @@
 import { produtosCollection } from '../config/db.js';
 
 export async function getProdutos (req, res){
-    const productType = req.headers["type"];
+    const productType = req.query.type;
     
-    const listaProdutos = await produtosCollection.find({type: productType}).toArray();
+    let listaProdutos;
+
+    if(!productType)
+        listaProdutos = await produtosCollection.find().toArray();
+    else
+        listaProdutos = await produtosCollection.find({type: productType}).toArray();
 
     try{
         res.send(listaProdutos.reverse());
