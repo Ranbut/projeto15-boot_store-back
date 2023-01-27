@@ -14,3 +14,4 @@ try{
 
 const db = mongoClient.db();
 export const usersCollection = db.collection("users");
+export const sessionCollection = db.collection("session");
