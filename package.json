@@ -1,4 +1,9 @@
 {
+  "name": "projeto15-boot_store-back",
+  "type": "module",
+  "description": "",
+  "version": "1.0.0",
+  "main": "./src/app.js",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
@@ -8,11 +13,6 @@
     "mongodb": "^4.13.0",
     "nodemon": "^2.0.20"
   },
-  "name": "projeto15-boot_store-back",
-  "type": "module",
-  "description": "",
-  "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "start": "nodemon ./src/app.js"
   },

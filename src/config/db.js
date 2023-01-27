@@ -15,4 +15,5 @@ try{
     console.log(`Erro ao conectar ao MongoDB: ${err}`);
 };
 
+export const usersCollection = db.collection("users");
 export const produtosCollection = db.collection("produtos");
