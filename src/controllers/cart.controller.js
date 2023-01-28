@@ -2,7 +2,7 @@ import {
   cartCollection,
   usersCollection,
   sessionCollection,
-} from "../config/db";
+} from "../config/db.js";
 
 export async function postCart(req, res) {
   const { type, image, price, offer } = req.body;

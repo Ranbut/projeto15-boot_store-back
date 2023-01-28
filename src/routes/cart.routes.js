@@ -1,12 +1,11 @@
 import { Router } from "express";
-
-import { postCart, getCart } from "../controllers/cart.controllers.js";
-import { token } from "../middlewares/token.Middleware";
+import { postCart, getCart, deleteCart } from "../controllers/cart.controller.js";
+import { token } from "../middlewares/token.Middleware.js";
 
 const cartRoute = Router();
 
-cartRoute.post("/cart", postCart, token);
-cartRoute.get("/cart", getCart, token);
-cartRoute.delete("/cart", deleteCart, token);
+cartRoute.post("/cart", token, postCart);
+cartRoute.get("/cart", token, getCart);
+cartRoute.delete("/cart", token, deleteCart);
 
 export default cartRoute;
