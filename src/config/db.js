@@ -18,3 +18,4 @@ try{
 export const usersCollection = db.collection("users");
 export const produtosCollection = db.collection("produtos");
 export const sessionCollection = db.collection("session");
+export const cartCollection = db.collection("cart");

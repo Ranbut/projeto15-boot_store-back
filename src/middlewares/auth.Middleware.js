@@ -16,7 +16,7 @@ export async function SignUpVerification(req, res, next) {
     const verifyUser = await usersCollection.findOne({ email: user.email });
 
     if (verifyUser) {
-      return res.status(409).send("Este usuário já existe, faça login");
+      return res.status(409).send("Verifique os dados cadastrados ou faça login");
     }
 
     res.locals.user = user;
