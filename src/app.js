@@ -8,12 +8,10 @@ const server = express();
 server.use(express.json());
 server.use(cors());
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 //Onde vai ser colocados os routes
 server.use([authRoute, produtosRoute, cartRoute]);
 
-server.listen(PORT, () => {
-  console.log(`Servidor iniciado na porta: ${PORT}`);
-  console.log(`Use: http://localhost:${PORT}`);
+server.listen(PORT, () => { console.log(`Servidor iniciado na porta: ${PORT}`);
 });
